@@ -1,0 +1,52 @@
+Blockchain Ledger Report
+========================
+
+Node to Certificate Mappings (Before Removal)
+=============================================
+Node_1: 984fb9e8-163b-46f3-955d-6927211f5272
+Node_2: 76709ea8-2145-4967-8775-daa802bcbcc4
+Node_3: 95c3057f-e734-4898-a072-16fc38d8ce38
+Node_4: e08982d2-026a-487b-ac95-ef61a616f43d
+Node_5: 6f67333b-8d3e-4057-9f13-fd10063a0aae
+
+Block Index: 0
+Timestamp: 1744313452.585798
+Data: Genesis Block
+Previous Hash: 0
+Hash: 2b0791a4
+------------------------------
+Block Index: 1
+Timestamp: 1744314221.1306546
+Data: {'node_id': 'Node_1', 'message': 'Traffic is smooth on Route A.'}
+Previous Hash: 2b0791a4
+Hash: 9abd0eb9
+------------------------------
+Block Index: 2
+Timestamp: 1744314221.1424732
+Data: {'sender_id': 'Node_1', 'message': 'Traffic is smooth on Route A.'}
+Previous Hash: 9abd0eb9
+Hash: 181d2c73
+------------------------------
+Block Index: 3
+Timestamp: 1744314223.1458726
+Data: {'node_id': 'Node_2', 'message': 'FAKE ALERT: Major accident on Route A!'}
+Previous Hash: 181d2c73
+Hash: 2c978b5d
+------------------------------
+Block Index: 4
+Timestamp: 1744314223.1488752
+Data: {'sender_id': 'Node_2', 'message': 'FAKE ALERT: Major accident on Route A!'}
+Previous Hash: 2c978b5d
+Hash: da0c1520
+------------------------------
+
+Malicious Node Tracking
+=======================
+The fake alert was sent by Node_2, and its certificate has been revoked.
+
+Node to Certificate Mappings (After Removal)
+============================================
+Node_1: 984fb9e8-163b-46f3-955d-6927211f5272
+Node_3: 95c3057f-e734-4898-a072-16fc38d8ce38
+Node_4: e08982d2-026a-487b-ac95-ef61a616f43d
+Node_5: 6f67333b-8d3e-4057-9f13-fd10063a0aae
